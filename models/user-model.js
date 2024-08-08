@@ -1,13 +1,15 @@
 const mongoose = require("mongoose")
 
 const userSchema = mongoose.Schema({
-    fullname :String,
     email :String,
+    
+    fullname :String,
+    
     password :String,
-    cart :{
-        type:Array,
-        defafult:[]
-    },
+    cart :[{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: "product",
+    }],
     isadmin :Boolean,
     order :{
         type:Array,

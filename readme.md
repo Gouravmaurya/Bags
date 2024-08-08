@@ -18,3 +18,12 @@ productmodel-
     bgcolor
     panelcolor
     textcolor 
+
+
+
+
+
+for changing node env we use this commands
+set NODE_ENV=development
+
+setx NODE_ENV "development"

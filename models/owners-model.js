@@ -9,7 +9,10 @@ const ownwerSchema = mongoose.Schema({
     },
     email :String,
     password :String,
-    
+    products:{
+        type:Array,
+        default:[]
+    },
     images :String
 }) 
 
